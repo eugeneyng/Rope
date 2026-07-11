@@ -1,49 +1,23 @@
-![image](https://github.com/Hillobar/Rope/assets/63615199/40f7397f-713c-4813-ac86-bab36f6bd5ba)
-
+<img width="2343" height="1375" alt="Screenshot 2026-07-11 132434" src="https://github.com/user-attachments/assets/abb3cfe1-9ec6-4ce5-b8fe-8c9de7a45294" />
 
 Rope implements the insightface inswapper_128 model with a helpful GUI.
 ### [Discord](https://discord.gg/EcdVAFJzqp)
 
 ### [Donate](https://www.paypal.com/donate/?hosted_button_id=Y5SB9LSXFGRF2)
 
-### [Wiki with install instructions and usage](https://github.com/Hillobar/Rope/wiki)
+### ${{\color{Goldenrod}{\textsf{Last Updated 2026-07-11}}}}$ ###
+### ${{\color{Goldenrod}{\textsf{Welcome to Rope-Bronze!}}}}$ ###
 
-### [Demo Video (Rope-Ruby)](https://www.youtube.com/watch?v=4Y4U0TZ8cWY)
-
-### ${{\color{Goldenrod}{\textsf{Last Updated 2024-05-27}}}}$ ###
-### ${{\color{Goldenrod}{\textsf{Welcome to Rope-Pearl!}}}}$ ###
-
-![Screenshot 2024-02-10 104718](https://github.com/Hillobar/Rope/assets/63615199/4b2ee574-c91e-4db2-ad66-5b775a049a6b)
-
-### Updates for Rope-Pearl-00: ###
-### To update from Opal-03a, just need to replace the rope folder.
-* (feature) Selectable model swapping output resolution - 128, 256, 512
-* (feature) Better selection of input images (ctrl and shift modifiers work mostly like windows behavior)
-* (feature) Toggle between mean and median merging withou having to save to compare
-* (feature) Added back keyboard controls (q, w, a, s, d, space)
-* (feature) Gamma slider
-* 
-![image](https://github.com/Hillobar/Rope/assets/63615199/9d89fded-addb-46fe-b2d7-bfe6f1a88188)
-
-### Performance:  ###
-Machine: 3090Ti (24GB), i5-13600K
-
-<img src="https://github.com/Hillobar/Rope/assets/63615199/3e3505db-bc76-48df-b8ac-1e7e86c8d751" width="200">
-
-File: benchmark/target-1080p.mp4, 2048x1080, 269 frames, 25 fps, 10s
-
-Rendering time in seconds (5 threads):
-
-| Option | Crystal | Sapphire | Ruby | Opal | Pearl |
-| --- | --- | --- | --- | --- | --- |
-| Only Swap (128) | 7.3 | 7.5 | 4.4 | 4.3 | 4.4 |
-| Swap (256) | --- | --- | --- | --- | 8.6 |
-| Swap (512) | --- | --- | --- | --- | 28.6 |
-| Swap+GFPGAN | 10.7 | 11.0 | 9.0 | 9.8 | 9.3 |
-| Swap+Codeformer | 12.4 | 13.5 | 11.1 | 11.1 | 11.3 |
-| Swap+one word CLIP | 10.4 | 11.2 | 9.1 | 9.3 | 9.3 |
-| Swap+Occluder | 7.8 | 7.8 | 4.4 | 4.7 | 4.7 |
-| Swap+MouthParser | 13.9 | 12.1 | 5.0 | 4.9 | 5.1 |
+### Updates for Rope-Bronze: ###
+* New, more responsive UI
+* TRT Engine for better performance
+* Batched inswapper for better 256 and 512 mode performance
+* Settings tab for managing folders, models threading, benchmarking, ...
+* New Likeness / Fidelity settings
+* Color Matching (LAB) for accureate color matching
+* XSeg masker
+* Easier Embedding management. Drag and drop embeddings to reorder them.
+* New Capture mode. Move and resize a window on your desktop to swap whatever is in it.
 
 ### Disclaimer: ###
 Rope is a personal project that I'm making available to the community as a thank you for all of the contributors ahead of me.
